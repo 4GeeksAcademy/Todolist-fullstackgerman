@@ -1,11 +1,55 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+ 
+.container {
 
-*/
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    border-radius: 1.3%;
+     box-shadow:
+    inset 2px 2px 4px #0a0a0a,
+    inset -2px -2px 4px #2a2a2a,
+    0 0 10px rgba(0, 102, 255, 0.5); /* glow azul */
+
+  backdrop-filter: blur(6px); /* relieve suave */
+  transition: 0.2s ease;
+}
+}
+/* Pastillas (items de la lista) estilo oscuro con relieve + glow azul */
+.list-item-dark {
+  background: linear-gradient(145deg, #1f1f1f, #0f0f0f); /* gris-negruzco */
+  color: white;
+  border: none;
+ border-radius: 1.3%;
+
+  /* Relieve / efecto 3D */
+  box-shadow:
+    inset 2px 2px 4px #0a0a0a,
+    inset -2px -2px 4px #2a2a2a,
+    0 0 10px rgba(0, 102, 255, 0.5); /* glow azul */
+
+  backdrop-filter: blur(6px); /* relieve suave */
+  transition: 0.2s ease;
+}
+
+/* Efecto hover */
+.list-item-dark:hover {
+  box-shadow:
+    inset 1px 1px 3px #0a0a0a,
+    inset -1px -1px 3px #2a2a2a,
+    0 0 18px rgba(0, 150, 255, 0.8); /* más glow azul */
+  transform: translateY(-2px);
+  border-radius: ;
+}
+
+/* Botón (emoji) sin fondo */
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
